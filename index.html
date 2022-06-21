@@ -459,7 +459,7 @@
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Masukin Nama Dulu
+						masukin namanya dulu
 					</div>
 					<div class="mycontent">
 						Tekan tombol merah untuk reset nama.<br><br>
@@ -478,17 +478,17 @@
 					<div class="mymax"></div>
 				</div>
 				<div class="myheader" id="mywindowheader">
-					halo <span id="spannama"></span>
+					haloooo <span id="spannama"></span>
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						mau ngomong nih,
+						gue mau ngomong nih
 					</div>
 					<div class="mycontent">
-						gue suka sama lu, lu mau ga, jadi pacar gua ?
+						gue suka bgt sama lu. semenjak ketemu di acara itu, intinya salting, saltingnya bruntal, lu mau ga, jadi pacar gua ?
 					</div>
 					<div class="mybutton">
-						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >gamau</div>
+						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >ngga</div>
 						<div class="mybuttonyes" onclick="playVid()">mau</div>
 					</div>
 				</div>
@@ -496,7 +496,7 @@
 			</div>
 		</div>
 		</div>
-	
+		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">jangan dijual bos</span>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
 	  		namaku=localStorage.getItem("nama");
@@ -507,7 +507,7 @@
 			function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">copyright MFarelS | 2022</div>';
+	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
@@ -758,14 +758,14 @@
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
-				if(h>23)tulis('malam', 'harusnya kamu udah tidur');
-				else if(h>19)tulis('malam','istirahat jangan lupaaa');
-				else if(h>18)tulis('petang','selamat menikmati senja');
+				if(h>23)tulis('malam','harusnya kamu udah tidur, jgn begadang');
+				else if(h>19)tulis('malam','waktunya istirahat');
+				else if(h>18)tulis('petang','selamat menikmati senja, udh makan belom ?');
 				else if(h>14)tulis('sore','selamat menjalani hari');
 				else if(h>13)tulis('siang','tetap semangat')
-				else if(h>9)tulis('siang','selamat sekolah')
+				else if(h>9)tulis('siang','selamat pagi menjelang siang, semangat')
 				else if(h>4)tulis('pagi','selamat beraktivitas');
-				else tulis('malam', 'harusnya kamu udah tidur');
+				else tulis('malam','harusnya kamu udah tidur');
 				selesai=true;
 			}
 			function resetposisi(){
@@ -798,12 +798,12 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('malam','harusnya kamu udah tidur');
-					else if(h>18)tulis('malam','istirahat jangan lupaaa');
-					else if(h>17)tulis('petang','selamat menikmati senja');
-					else if(h>14)tulis('sore','selamat menjalani hari');
+					if(h>23)tulis('malam','harusnya kamu udah tidur, jgn begadang');
+					else if(h>18)tulis('malam','waktunya istirahat');
+					else if(h>17)tulis('petang','selamat menikmati senja, udh dimangan belom coklatnya?');
+					else if(h>14)tulis('sore','selamat menjalani hari,  dimakan yaa coklatnya');
 					else if(h>13)tulis('siang','tetap semangat')
-					else if(h>10)tulis('siang','selamat sekolah')
+					else if(h>10)tulis('siang','selamat siang, udh makan belom ?')
 					else if(h>4)tulis('pagi','selamat beraktivitas');
 					else tulis('malam','harusnya kamu udah tidur');
 					if(h>18) document.querySelector('img').src="malam1.jpg";
